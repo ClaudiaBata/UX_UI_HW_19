@@ -133,35 +133,15 @@
   <div id="modal-popup" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
-      <p>I'm always looking to improve my portfolio! Please let me know if you have constructive criticsm. Thank you!</p>
-      <textarea id="feedback-text" rows="4"></textarea>
+      <p>Please provide feedback on our portfolio:</p>
+      <textarea id="feedback-text" rows="4" placeholder="Your feedback here..."></textarea>
+      <input type="file" id="file-input">
       <button id="submit-feedback">Submit</button>
     </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js/index.js"></script>
-  <script>
-    // Add jQuery code for modal popup functionality
-    $(document).ready(function(){
-      // Show modal popup on hover
-      $('#sticky-circle').hover(function(){
-        $('#modal-popup').css('display', 'block');
-      });
-
-      // Hide modal popup when close button is clicked
-      $('.close').click(function(){
-        $('#modal-popup').css('display', 'none');
-      });
-
-      // Hide modal popup when submit button is clicked
-      $('#submit-feedback').click(function(){
-        var feedback = $('#feedback-text').val();
-        // You can handle the feedback submission here
-        $('#modal-popup').css('display', 'none');
-      });
-    });
-  </script>
 </body>
 </html>
 
